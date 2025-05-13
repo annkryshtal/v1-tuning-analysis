@@ -1,6 +1,6 @@
 # 🧠 Reverse Correlation and Orientation Tuning in V1  
 **Simulations and model fitting using Poisson spike data and tuning curve analysis**  
-By [Anna Kryshtal](https://github.com/anna-kryshtal)
+By [Anna Kryshtal](https://github.com/annkryshtal)
 
 ---
 
