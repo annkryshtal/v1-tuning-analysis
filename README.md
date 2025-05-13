@@ -35,37 +35,19 @@ This code uses:
 
 
 ## ⚠️ Notes on Lab-Specific Code
-Some parts of functions_for_fitting_updated.py use internal modules from a DataJoint-based codebase ('djd.*', e.g., 'djd.revcorr', 'djd.unit', 'djd.tuning', etc.).
-
-These are not included in this repository.
-
-They are used only for experiment-specific data access.
-
-All model functions, tuning curve fitting, and simulation logic are self-contained and reusable.
+Some parts of functions_for_fitting_updated.py use internal modules from a DataJoint-based codebase (`djd.*`, e.g., `djd.revcorr`, `djd.unit`, `djd.tuning`, etc.).
+These are not included in this repository. They are used only for experiment-specific data access. All model functions, tuning curve fitting, and simulation logic are self-contained and reusable.
 
 To run the code independently:
+Comment out or replace `djd.*` imports.
 
-Comment out or replace 'djd.*' imports.
-
-Use synthetic or public neural data as input for demonstration.
-
-## 📊 Sample Output (Recommended)
-You are encouraged to add visualizations to a '/figures/' folder to illustrate:
-
-Reconstructed kernel from 'Simulated_kernels_homogeneous_spiking.ipynb'
-
-Orientation tuning fits (von Mises / Gaussian)
-
-Contrast invariance metrics across time
-
-Example image embed:
-
+## 📊 Sample Output
+This figure demonstrates orientation tuning curve fitting using a von Mises function, generated with functions from `functions_for_fitting_updated.py`.
 ### Orientation Tuning Curve Fit
 ![tuning_curve](figures/amp_tw_modulated_example.png)
 
 ## 👩‍🔬 Academic Context
 This work was conducted during my MSc Neuroscience thesis in the Busse Lab at LMU Munich. It builds on research exploring how V1 neurons encode visual stimuli through tuning curve properties and gain modulation.
-
 All data in this repository is either simulated or formatted for public sharing. For academic reuse or adaptation, please cite the repository or contact me directly.
 
 ## 📜 License
